@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{%block title%}Anasayfa - {{block.super}}{%endblock%}
+{% block body %}
+{% load static %}
+
+ <div class="container">
+
+      <!-- Introduction Row -->
+      <h1 class="my-4">Hakkımda
+        <small>Sizinle Tanışmak Güzel</small>
+      </h1>
+
+      <!-- Team Members Row -->
+
+        <div class="col-lg-12 col-sm-12 text-center mb-12">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'aboutme/image/ÖFOkuyucu.jpg'%}" alt="">
+          <h3>Ömer Faruk OKUYUCU
+            <small>Yazar</small>
+          </h3>
+          <p>İlk ve orta öğrenimini Tunceli ve İskenderun'da, lise eğitimini İskenderun Lisesi'nde, lisans eğitimini İstanbul Üniversitesi Fen Fakültesi Fizik bölümünde tamamladı.
+
+      Eğitim sektörünün farklı alanlarında öğretmen, zümre başkanı, yazar, editör, rehberlik uzmanı, idareci ve yönetici olarak 13 yıl çalıştı. Yöneticilik, Liderlik, Girişimcilik, Pazarlama, İletişim Becerileri, Zaman Yönetimi, Kişisel Gelişim, Temel Psikoloji, İş Sağlığı ve Güvenliği, Eğitimcilik, İlk Yardım üzerine çeşitli eğitimler almıştır.
+      Üniversite Hazırlık Rehberliği ile ilgili birçok seminer ve eğitim vermiştir. Yayınlanmış birçok fizik dersi, eğitim ve güncel olaylar üzerine kitap, dergi, test ve yayını bulunmaktadır. Sektörel doyuma ulaştığını düşündüğü için, 2013 yılında Üsküdar Üniversitesi'nde öğretim görevlisi olarak çalışmaya başladı.
+      Üsküdar Üniversitesi Sağlık Bilimleri Enstitüsü İş Sağlığı ve Güvenliği Programı'nda yüksek lisans programını bitirmiştir.
+</p>
+        </div>
+
+ </div>
+
+{% endblock %}
+

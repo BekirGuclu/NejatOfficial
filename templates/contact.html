@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{%block title%}Anasayfa - {{block.super}}{%endblock%}
+{% block body %}
+
+<hr>
+<div class = "container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form method="POST" enctype="multipart/form-data">  <!-- Arama çubuğunda çıkmasını engelledi -->
+                    {% csrf_token %}
+                    <h1>İletişim Formu</h1>
+                    <br>
+                    {{form|crispy}} <!-- form nesnesini aktardık -->
+
+                    <input class="btn btn-primary" type="submit" value="Gönder">
+
+
+                 </form>
+            </div>
+        </div>
+    </div>
+
+{%endblock%}

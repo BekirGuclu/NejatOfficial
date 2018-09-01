@@ -1,0 +1,18 @@
+body{
+
+padding-top: 70px;
+}
+
+.navbar .navbar-brand{
+
+color : #fbdc00;
+}
+
+.navbar .navbar-nav li a{
+color : #fbdc00 !important;
+}
+
+.navbar-custom {
+    color: #151515;
+    background-color: #151515;
+}
